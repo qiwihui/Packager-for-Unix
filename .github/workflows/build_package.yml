@@ -13,3 +13,7 @@ jobs:
       - name: build
         run: |
           ./packageOCSAgent.sh
+      - uses: actions/upload-artifact@v2
+        with:
+          name: ocsinventory-agent
+          path: ocsinventory-agent*.tar.gz
